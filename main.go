@@ -65,13 +65,10 @@ func startTraining(charName, charClass string) string {
 	switch charClass {
 	case "warrior":
 		fmt.Printf("%s, ты Воитель - отличный боец ближнего боя.\n", charName)
-
 	case "mage":
 		fmt.Printf("%s, ты Маг - превосходный укротитель стихий.\n", charName)
-
 	case "healer":
 		fmt.Printf("%s, ты Лекарь - чародей, способный исцелять раны.\n", charName)
-
 		fmt.Println("Потренируйся управлять своими навыками.")
 		fmt.Println("Введи одну из команд: attack — чтобы атаковать противника,")
 		fmt.Println("defence — чтобы блокировать атаку противника,")
@@ -85,13 +82,10 @@ func startTraining(charName, charClass string) string {
 
 			switch cmd {
 			case "attack":
-
 				fmt.Println(attack(charName, charClass))
 			case "defence":
-
 				fmt.Println(defence(charName, charClass))
 			case "special":
-
 				fmt.Println(special(charName, charClass))
 			}
 		}
