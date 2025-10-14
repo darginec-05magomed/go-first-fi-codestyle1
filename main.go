@@ -27,7 +27,8 @@ func defence(charName, charClass string) string {
 	switch charClass {
 	case "warrior":
 
-		return fmt.Sprintf("%s блокировал %d урона.", charName, 10+randint(5, 10))
+		return
+		fmt.Sprintf("%s блокировал %d урона.", charName, 10+randint(5, 10))
 	case "mage":
 
 		return fmt.Sprintf("%s блокировал %d урона.", charName, 10+randint(-2, 2))
@@ -45,7 +46,8 @@ func special(charName, charClass string) string {
 	switch charClass {
 	case "warrior":
 
-		return fmt.Sprintf("%s применил специальное умение `Выносливость %d`", charName, 80+25)
+		return
+		fmt.Sprintf("%s применил специальное умение `Выносливость %d`", charName, 80+25)
 	case "mage":
 
 		return fmt.Sprintf("%s применил специальное умение `Атака %d`", charName, 5+40)
@@ -83,10 +85,13 @@ func startTraining(charName, charClass string) string {
 
 			switch cmd {
 			case "attack":
+
 				fmt.Println(attack(charName, charClass))
 			case "defence":
+
 				fmt.Println(defence(charName, charClass))
 			case "special":
+
 				fmt.Println(special(charName, charClass))
 			}
 		}
