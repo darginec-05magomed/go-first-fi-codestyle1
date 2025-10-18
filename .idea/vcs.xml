@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/go-calc-and-win" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/go-first-fi-codestyle1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/go-sprint-four" vcs="Git" />
   </component>
 </project>
